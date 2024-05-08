@@ -16,6 +16,10 @@ public class Task {
     private String description;
     private boolean completed;
 
+    public void markCompleted(){
+        this.completed = true;
+    }
+
     public Long getId() {
         return id;
     }

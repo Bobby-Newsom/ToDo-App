@@ -13,6 +13,8 @@ public interface TaskRepository extends CrudRepository<Task, Long> {
 
     Long countByCompleted(boolean completed); //returns the number of completed tasks
 
+    List<Task> findAllByOrderByDueDateAsc(); // Returns a list sorted by due date in ascending order
+
 
 
 }
